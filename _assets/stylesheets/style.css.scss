@@ -4,65 +4,74 @@
 @import "fontface.css.scss";
 @import "typography.css.scss";
 @import "grid.css.scss";
-/* ========================================================= Main ===*/
-html, body{
-    background-color: #EBEAE5;
-    color: #373737;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.45;
-    width: 100%;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-/* ========================================================= Header ===*/
-/* ------
--- Nav --
------- */
-nav{
-  ul{
-    li{
-      a{
 
-      }
-    }
+body {
+  -webkit-filter: sepia(20%);
+  background-color: #EBEAE5;
+  @media screen and (min-width: 1024px) {
+    background: #EBEAE5 url(cover2-b705441c76bec58e3d5432c7e7115fd8.jpg) top left no-repeat;
+    background-size: contain;
   }
 }
-/* --------
--- Cover --
--------- */
-.cover{
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  color: #373737;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.45;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  background: #EBEAE5;
+
+  @media screen and (min-width: 1024px) {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.46);
+    max-width: 1024px;
+    margin: 40px auto;
+  }
+}
+
+
+.cover {
   img{
     height: auto;
     max-width: 100%;
-    padding: 1%;
   }
 }
-/* ========================================================= Footer ===*/
-footer{
 
-}
-/* ========================================================= Respond ===*/
-@media all and (min-width: 41em){
-  body{font-size: 1.125em;}
-  .container{
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .row{
-    margin-left: -1em;
-    margin-right: -1em;
-  }
-  .col-12 { width: 100%; }
-  .col-9 { width: 75%; }
-  .col-8 { width: 66.7%; }
-  .col-6 { width: 50%; }
-  .col-4 { width: 33.3%; }
-  .col-3 { width: 25%; }
-}
-@media all and (min-width: 960px){
 
+.content {
+  display: flex;
+  padding: 1em;
+  flex-direction: column-reverse;
+  
+  @media screen and (min-width: 560px) {
+    flex-direction: row;
+  }
+ 
+  > * {
+    flex: 1 1 100%;
+  }
 }
