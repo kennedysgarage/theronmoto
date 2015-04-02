@@ -4,65 +4,224 @@
 @import "fontface.css.scss";
 @import "typography.css.scss";
 @import "grid.css.scss";
-/* ========================================================= Main ===*/
-html, body{
-    background-color: #EBEAE5;
-    color: #373737;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.45;
+
+body {
+  font-family: 'Effra Regular';
+  background: #EBEAE5;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  color: #373737;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.45;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  body:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #EBEAE5 url(cover2-b705441c76bec58e3d5432c7e7115fd8.jpg) top left no-repeat;
+    background-size: 100%;
+    height: 100%;
     width: 100%;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    z-index: -1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: sepia(80%) blur(2px);
+    filter: sepia(80%) blur(2px);
+  }
 }
-/* ========================================================= Header ===*/
-/* ------
--- Nav --
------- */
-nav{
-  ul{
-    li{
-      a{
 
-      }
-    }
-  }
+label {
+  font-family: "Effra Heavy";
+  text-transform: uppercase;
+  font-size: 12px;
 }
-/* --------
--- Cover --
--------- */
-.cover{
-  img{
-    height: auto;
-    max-width: 100%;
-    padding: 1%;
-  }
-}
-/* ========================================================= Footer ===*/
-footer{
 
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
 }
-/* ========================================================= Respond ===*/
-@media all and (min-width: 41em){
-  body{font-size: 1.125em;}
-  .container{
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .row{
-    margin-left: -1em;
-    margin-right: -1em;
-  }
-  .col-12 { width: 100%; }
-  .col-9 { width: 75%; }
-  .col-8 { width: 66.7%; }
-  .col-6 { width: 50%; }
-  .col-4 { width: 33.3%; }
-  .col-3 { width: 25%; }
-}
-@media all and (min-width: 960px){
 
+input,
+textarea {
+  border-radius: 3px;
+  border: 0;
+  padding: 10px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  background: rgba(223, 221, 213, 0.76);
+  color: #252429;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border: 0;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.81), 0 1px 2px rgba(0, 0, 0, 0.72);
+  font-family: 'Effra Regular';
+  max-width: 50%;
+  padding: 20px;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  width: 100%;
+  text-transform: uppercase;
+  background: #F1412F;
+  color: white;
+}
+button:focus, button:hover {
+  background: #ef2b17;
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  box-shadow: none;
+  outline: none;
+  -webkit-transform: translateX(100%) translateY(2px);
+      -ms-transform: translateX(100%) translateY(2px);
+          transform: translateX(100%) translateY(2px);
+}
+
+.tm-poster {
+  width: 100%;
+  background: #EBEAE5;
+}
+@media screen and (min-width: 1024px) {
+  .tm-poster {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.46);
+    max-width: 1024px;
+    margin: 40px auto;
+  }
+}
+.tm-poster .tm-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 2em 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+@media screen and (min-width: 560px) {
+  .tm-poster .tm-content {
+    padding: 1em 2em 6em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.tm-poster .tm-content > *:nth-child(1) {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+@media screen and (min-width: 560px) {
+  .tm-poster .tm-content > *:nth-child(1) {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    padding-right: 60px;
+  }
+}
+.tm-poster .tm-content > *:nth-child(2) {
+  margin-top: 40px;
+}
+@media screen and (min-width: 560px) {
+  .tm-poster .tm-content > *:nth-child(2) {
+    margin-top: 0;
+    padding-left: 60px;
+  }
+}
+.tm-poster .tm-content > * {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.tm-poster .tm-content > * > * {
+  margin-top: 0;
+}
+
+.tm-request {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Effra Light';
+}
+@media screen and (min-width: 560px) {
+  .tm-request {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 35px;
+  }
+}
+@media screen and (min-width: 560px) {
+  .tm-request svg {
+    max-width: 200px;
+    padding-top: 20px;
+  }
+}
+
+.tm-contact__title {
+  border-bottom: 2px solid #283942;
+  margin-bottom: 24px;
+  font-family: 'Effra Heavy';
+  font-size: 1.275em;
+  letter-spacing: 1px;
+  line-height: 1.675;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
+.tm-inputs__item {
+  margin: 14px 0;
+}
+
+.tm-displayad img {
+  height: auto;
+  max-width: 100%;
 }
