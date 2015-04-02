@@ -1,10 +1,8 @@
-# Dactyl (Jekyll)
-Trying out a new starting point for websites that I build for clients. This is what I use when there is no need for CMS.
+# Theron Moto Co.
+
+![tm](https://cloud.githubusercontent.com/assets/183007/6889853/866c14ec-d66d-11e4-830c-14a3deacf530.png)
 
 ## Get Started
 * run ```gem install jekyll```
 * run ```bundle install```
 * Start the local server ```jekyll serve --watch```
-
-### Update your info
-* ```_config.yml```
