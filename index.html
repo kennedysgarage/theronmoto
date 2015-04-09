@@ -4,10 +4,11 @@ tags: inquiry
 ---
 <div class="tm-displayad">
   <img src="{% asset_path cover600x300.jpg %}"
-           srcset="{% asset_path cover600x300.jpg %}  600w,
-                   {% asset_path cover1024x512.jpg %} 1024w"
-           sizes="100vw, (min-width: 900px) 100vw"
-           alt="We want your porsche 911">
+       srcset="{% asset_path cover@2x.jpg %} 2x,
+               {% asset_path cover600x300.jpg %} 600w,
+               {% asset_path cover1024x512.jpg %} 1024w"
+       sizes="100vw, (min-width: 900px) 100vw"
+       alt="We want your porsche 911">
 </div>
 
 <main class="tm-content" role="main">
