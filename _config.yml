@@ -4,7 +4,18 @@ author: Theron Studios
 email: hello@theronstudios.com
 url: http://theronmoto.com
 
-exclude: ["CNAME","editorconfig.txt","Gemfile","Gemfile.lock","README.md", "RAKEFILE"]
+exclude:
+  - CNAME
+  - editorconfig.txt
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - RAKEFILE
+
+gems:
+  - jekyll-assets
+  - uglifier
+  - sass
 
 assets:
   dirname: assets
