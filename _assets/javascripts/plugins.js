@@ -1,3 +1,6 @@
-$(document).ready(function(){
+//= require vendor/fitvids
 
+$(document).ready(function(){
+  // Target your .container, .wrapper, .post, etc.
+  $(".vid").fitVids();
 });

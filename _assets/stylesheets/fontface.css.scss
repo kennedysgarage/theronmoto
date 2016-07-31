@@ -1,41 +1,91 @@
 /* ========================================================= Fontface ===*/
 @font-face {
-    font-family: 'Effra Light';
-    src: url(asset_path('effra/effra-light/effra-light.eot'));
-    src: url(asset_path('effra/effra-light/effra-light.eot?#iefix')) format('embedded-opentype'),
-         url(asset_path('effra/effra-light/effra-light.woff')) format('woff'),
-         url(asset_path('effra/effra-light/effra-light.ttf')) format('truetype'),
-         url(asset_path('effra/effra-light/effra-light.svg#1942_report1942_report')) format('svg');
+    font-family: 'Veneer';
+    src: url(asset_path('veneer/veneer.eot'));
+    src: url(asset_path('veneer/veneer.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('veneer/veneer.woff')) format('woff'),
+         url(asset_path('veneer/veneer.ttf')) format('truetype'),
+         url(asset_path('veneer/veneer.svg#veneerregular')) format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Effra Regular';
-    src: url(asset_path('effra/effra-regular/effra-regular.eot'));
-    src: url(asset_path('effra/effra-regular/effra-regular.eot?#iefix')) format('embedded-opentype'),
-         url(asset_path('effra/effra-regular/effra-regular.woff')) format('woff'),
-         url(asset_path('effra/effra-regular/effra-regular.ttf')) format('truetype'),
-         url(asset_path('effra/effra-regular/effra-regular.svg#1942_report1942_report')) format('svg');
+    font-family: 'Circular Book';
+    src: url(asset_path('circular/Circular-Book.eot'));
+    src: url(asset_path('circular/Circular-Book.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('circular/Circular-Book.woff')) format('woff'),
+         url(asset_path('circular/Circular-Book.ttf')) format('truetype'),
+         url(asset_path('circular/Circular-Book.svg#Circular-Book')) format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Effra Medium';
-    src: url(asset_path('effra/effra-medium/effra-medium.eot'));
-    src: url(asset_path('effra/effra-medium/effra-medium.eot?#iefix')) format('embedded-opentype'),
-         url(asset_path('effra/effra-medium/effra-medium.woff')) format('woff'),
-         url(asset_path('effra/effra-medium/effra-medium.ttf')) format('truetype'),
-         url(asset_path('effra/effra-medium/effra-medium.svg#1942_report1942_report')) format('svg');
+    font-family: 'Circular Book Italic';
+    src: url(asset_path('circular/Circular-BookItalic.eot'));
+    src: url(asset_path('circular/Circular-BookItalic.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('circular/Circular-BookItalic.woff')) format('woff'),
+         url(asset_path('circular/Circular-BookItalic.ttf')) format('truetype'),
+         url(asset_path('circular/Circular-BookItalic.svg#Circular-BookItalic')) format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Effra Heavy';
-    src: url(asset_path('effra/effra-heavy/effra-heavy.eot'));
-    src: url(asset_path('effra/effra-heavy/effra-heavy.eot?#iefix')) format('embedded-opentype'),
-         url(asset_path('effra/effra-heavy/effra-heavy.woff')) format('woff'),
-         url(asset_path('effra/effra-heavy/effra-heavy.ttf')) format('truetype'),
-         url(asset_path('effra/effra-heavy/effra-heavy.svg#1942_report1942_report')) format('svg');
+    font-family: 'Circular Medium';
+    src: url(asset_path('circular/Circular-Medium.eot'));
+    src: url(asset_path('circular/Circular-Medium.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('circular/Circular-Medium.woff')) format('woff'),
+         url(asset_path('circular/Circular-Medium.ttf')) format('truetype'),
+         url(asset_path('circular/Circular-Medium.svg#Circular-Medium')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Medium Italic';
+    src: url(asset_path('circular/Circular-MediumItalic.eot'));
+    src: url(asset_path('circular/Circular-MediumItalic.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('circular/Circular-MediumItalic.woff')) format('woff'),
+         url(asset_path('circular/Circular-MediumItalic.ttf')) format('truetype'),
+         url(asset_path('circular/Circular-MediumItalic.svg#Circular')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Bold';
+    src: url(asset_path('circular/Circular-Bold.eot'));
+    src: url(asset_path('circular/Circular-Bold.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('circular/Circular-Bold.woff')) format('woff'),
+         url(asset_path('circular/Circular-Bold.ttf')) format('truetype'),
+         url(asset_path('circular/Circular-Bold.svg#Circular-Bold')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Bold Italic';
+    src: url(asset_path('circular/Circular-BoldItalic.eot'));
+    src: url(asset_path('circular/Circular-BoldItalic.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('circular/Circular-BoldItalic.woff')) format('woff'),
+         url(asset_path('circular/Circular-BoldItalic.ttf')) format('truetype'),
+         url(asset_path('circular/Circular-BoldItalic.svg#Circular-BoldItalic')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Black';
+    src: url(asset_path('circular/Circular-Black.eot'));
+    src: url(asset_path('circular/Circular-Black.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('circular/Circular-Black.woff')) format('woff'),
+         url(asset_path('circular/Circular-Black.ttf')) format('truetype'),
+         url(asset_path('circular/Circular-Black.svg#Circular-Black')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Black Italic';
+    src: url(asset_path('circular/Circular-BlackItalic.eot'));
+    src: url(asset_path('circular/Circular-BlackItalic.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('circular/Circular-BlackItalic.woff')) format('woff'),
+         url(asset_path('circular/Circular-BlackItalic.ttf')) format('truetype'),
+         url(asset_path('circular/Circular-BlackItalic.svg#Circular-BlackItalic')) format('svg');
     font-weight: normal;
     font-style: normal;
 }

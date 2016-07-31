@@ -1,36 +1,44 @@
 /* ========================================================= Typography ===*/
-h1, h2, h3, h4 {
-  color: #25272B;
+.title{
+  font-family: 'Veneer', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  color: #1D282F;
   margin: 1.414em 0 0.5em;
-  font-family: 'ProximaNovaLight', sans-serif;
+  font-family: 'Circular Bold', sans-serif;
   font-weight: normal;
   line-height: 1.2;
 }
 h1{
-  font-size: 3.998em;
-  margin-top: 0;
+  font-family: 'Veneer', sans-serif;
+  font-size: 50px;
+  margin: 0 0 20px;
 }
 h2{
-  font-size: 2.827em;
-  margin: 0 0 5px;
+  font-size: 37px;
+  margin: 0 0 15px;
 }
 h3{
   display: block;
-  font-size: 1.999em;
+  font-size: 28px;
   margin: 35px 0 15px;
 }
 h4{
-  font-size: 1.414em;
+  font-size: 21px;
+  margin: 5px 0;
+}
+h5{
+  font-size: 16px;
   margin: 5px 0;
 }
 p{
-  color: #656565;
-  color: #37383A;
+  color: #797f85;
   line-height: 1.5;
-  margin: 0 0 1.3em;
+  margin: 0 0 1.5em;
 }
 strong{
-  color: #000;
+  color: #6D7378;
+  font-family: 'Circular Bold', sans-serif;
 }
 small, .font_small{
   font-size: 0.707em;
@@ -39,13 +47,13 @@ ul, ol{
   margin: 0 0 20px;
 }
 li{
-  color: #656565;
-  font-family: 'ProximaNova', sans-serif;
+  color: #797f85;
+  font-family: 'Circular Book', sans-serif;
   line-height: 1.5;
 }
 dl{
-  color: #656565;
-  font-family: 'ProximaNova', sans-serif;
+  color: #797f85;
+  font-family: 'Circular Book', sans-serif;
   line-height: 1.5;
   margin: 0 0 10px;
 }
@@ -53,6 +61,6 @@ dt{
   font-weight: bold;
 }
 dd{
-  color: #A9A9A9;
+  color: #797f85;
   margin: 0 0 10px 10px;
 }
